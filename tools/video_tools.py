@@ -32,8 +32,8 @@ async def luma_generate_video(
     ] = False,
     enhancement: Annotated[
         bool,
-        Field(description="If true, enable clarity enhancement for the video. Default is false."),
-    ] = False,
+        Field(description="If true, enable clarity enhancement for the video. Default is true."),
+    ] = True,
     timeout: Annotated[
         int | None,
         Field(description="Timeout in seconds for the API to return data. Default is 300."),
@@ -102,8 +102,8 @@ async def luma_generate_video_from_image(
     ] = False,
     enhancement: Annotated[
         bool,
-        Field(description="If true, enable clarity enhancement. Default is false."),
-    ] = False,
+        Field(description="If true, enable clarity enhancement. Default is true."),
+    ] = True,
     timeout: Annotated[
         int | None,
         Field(description="Timeout in seconds for the API to return data. Default is 300."),
