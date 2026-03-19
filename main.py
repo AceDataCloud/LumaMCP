@@ -180,27 +180,46 @@ Environment Variables:
 
             async def server_card(_request: Request) -> JSONResponse:
                 """MCP Server Card for Smithery and other registries."""
-                return JSONResponse({
-                    "serverInfo": {"name": "MCP Luma"},
-                    "authentication": {"required": True, "schemes": ["bearer"]},
-                    "tools": [
-                    {"name": "luma_generate_video", "description": "Generate video from text"},
-                    {"name": "luma_generate_video_from_image", "description": "Generate video from image"},
-                    {"name": "luma_extend_video", "description": "Extend existing video"},
-                    {"name": "luma_extend_video_from_url", "description": "Extend video from URL"},
-                    {"name": "luma_get_task", "description": "Query task status"},
-                    {"name": "luma_get_tasks_batch", "description": "Query multiple tasks"},
-                    {"name": "luma_list_aspect_ratios", "description": "List aspect ratios"},
-                    {"name": "luma_list_actions", "description": "List available actions"}
-                    ],
-                    "prompts": [
-                    {"name": "luma_video_generation_guide", "description": "Guide for video generation"},
-                    {"name": "luma_workflow_examples", "description": "Example workflows"},
-                    {"name": "luma_prompt_suggestions", "description": "Prompt suggestions"}
-                    ],
-                    "resources": [],
-                })
-
+                return JSONResponse(
+                    {
+                        "serverInfo": {"name": "MCP Luma"},
+                        "authentication": {"required": True, "schemes": ["bearer"]},
+                        "tools": [
+                            {
+                                "name": "luma_generate_video",
+                                "description": "Generate video from text",
+                            },
+                            {
+                                "name": "luma_generate_video_from_image",
+                                "description": "Generate video from image",
+                            },
+                            {"name": "luma_extend_video", "description": "Extend existing video"},
+                            {
+                                "name": "luma_extend_video_from_url",
+                                "description": "Extend video from URL",
+                            },
+                            {"name": "luma_get_task", "description": "Query task status"},
+                            {"name": "luma_get_tasks_batch", "description": "Query multiple tasks"},
+                            {
+                                "name": "luma_list_aspect_ratios",
+                                "description": "List aspect ratios",
+                            },
+                            {"name": "luma_list_actions", "description": "List available actions"},
+                        ],
+                        "prompts": [
+                            {
+                                "name": "luma_video_generation_guide",
+                                "description": "Guide for video generation",
+                            },
+                            {"name": "luma_workflow_examples", "description": "Example workflows"},
+                            {
+                                "name": "luma_prompt_suggestions",
+                                "description": "Prompt suggestions",
+                            },
+                        ],
+                        "resources": [],
+                    }
+                )
 
             @contextlib.asynccontextmanager
             async def lifespan(_app: Starlette):  # type: ignore[no-untyped-def]
