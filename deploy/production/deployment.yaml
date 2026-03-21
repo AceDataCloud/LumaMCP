@@ -31,6 +31,8 @@ spec:
           env:
             - name: MCP_SERVER_URL
               value: "https://luma.mcp.acedata.cloud"
+            - name: ACEDATACLOUD_OAUTH_CLIENT_ID
+              value: "C8QpZFf6TeEpY4XvYtqdKOqcowS7ge7EXIaEY0dJ-w0"
           resources:
             limits:
               cpu: 500m
