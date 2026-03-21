@@ -21,6 +21,7 @@ class TestFormatVideoResult:
         assert data["video_id"] == "test-video-456"
         assert data["state"] == "completed"
         assert "video_url" in data
+        assert data["mcp_async_submission"]["poll_tool"] == "luma_get_task"
 
     def test_format_error(self, mock_error_response):
         """Test formatting error response."""
@@ -48,6 +49,7 @@ class TestFormatTaskResult:
         assert data["request"]["action"] == "generate"
         assert data["response"]["success"] is True
         assert data["response"]["video_id"] == "video-456"
+        assert data["mcp_task_polling"]["poll_tool"] == "luma_get_task"
 
     def test_format_error(self):
         """Test formatting error response."""
