@@ -51,7 +51,8 @@ When the user wants to generate video, choose the appropriate tool based on thei
 - User asks "is my video done?"
 
 ## Important Notes:
-1. Video generation is async - always return the task_id to the user
+1. Video generation is async in MCP - generation tools should return quickly with a task_id
+2. After submit, poll with `luma_get_task` until the final video URLs are available
 2. Generation typically takes 1-2 minutes
 3. Default aspect ratio is 16:9 (landscape)
 4. Use 9:16 for mobile/vertical content
@@ -68,8 +69,8 @@ def luma_workflow_examples() -> str:
 ## Workflow 1: Quick Video Generation
 1. User: "Make me a video of waves on a beach"
 2. Call `luma_generate_video(prompt="Ocean waves gently crashing on a sandy beach, sunset, peaceful")`
-3. Return task_id to user
-4. User can check status with `luma_get_task(task_id)`
+3. Return the task_id from the submission response
+4. Poll with `luma_get_task(task_id)` until the completed video URLs are available
 
 ## Workflow 2: Animate an Image
 1. User provides image URL
