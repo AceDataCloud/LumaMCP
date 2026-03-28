@@ -391,8 +391,8 @@ Options:
 
 ```bash
 # Clone repository
-git clone https://github.com/AceDataCloud/mcp-luma.git
-cd mcp-luma
+git clone https://github.com/AceDataCloud/LumaMCP.git
+cd LumaMCP
 
 # Create virtual environment
 python -m venv .venv

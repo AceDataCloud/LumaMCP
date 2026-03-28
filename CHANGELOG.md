@@ -31,5 +31,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Comprehensive test suite
 - Full documentation
 
-[Unreleased]: https://github.com/AceDataCloud/mcp-luma/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/AceDataCloud/mcp-luma/releases/tag/v0.1.0
+[Unreleased]: https://github.com/AceDataCloud/LumaMCP/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/AceDataCloud/LumaMCP/releases/tag/v0.1.0
