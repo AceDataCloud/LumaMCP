@@ -67,11 +67,11 @@ all = [
 mcp-luma = "main:main"
 
 [project.urls]
-Homepage = "https://github.com/AceDataCloud/mcp-luma"
+Homepage = "https://github.com/AceDataCloud/LumaMCP"
 Documentation = "https://platform.acedata.cloud/documents/5bd3597d-1ff8-44ad-a580-b66b48393e7f"
-Repository = "https://github.com/AceDataCloud/mcp-luma"
-Issues = "https://github.com/AceDataCloud/mcp-luma/issues"
-Changelog = "https://github.com/AceDataCloud/mcp-luma/blob/main/CHANGELOG.md"
+Repository = "https://github.com/AceDataCloud/LumaMCP"
+Issues = "https://github.com/AceDataCloud/LumaMCP/issues"
+Changelog = "https://github.com/AceDataCloud/LumaMCP/blob/main/CHANGELOG.md"
 
 [build-system]
 requires = ["hatchling>=1.21.0,<1.30.0"]
