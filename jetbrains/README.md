@@ -58,7 +58,7 @@ Connects to the hosted MCP server at `luma.mcp.acedata.cloud`. No local install 
 - [Ace Data Cloud Platform](https://platform.acedata.cloud)
 - [API Documentation](https://docs.acedata.cloud)
 - [PyPI Package](https://pypi.org/project/mcp-luma/)
-- [Source Code](https://github.com/AceDataCloud/MCPLuma)
+- [Source Code](https://github.com/AceDataCloud/LumaMCP)
 
 ## License
 
