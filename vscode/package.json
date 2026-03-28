@@ -24,13 +24,13 @@
     "dream machine",
     "ai video"
   ],
-  "homepage": "https://github.com/AceDataCloud/MCPLuma",
+  "homepage": "https://github.com/AceDataCloud/LumaMCP",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AceDataCloud/MCPLuma"
+    "url": "https://github.com/AceDataCloud/LumaMCP"
   },
   "bugs": {
-    "url": "https://github.com/AceDataCloud/MCPLuma/issues"
+    "url": "https://github.com/AceDataCloud/LumaMCP/issues"
   },
   "contributes": {
     "mcpServers": {

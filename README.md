@@ -444,7 +444,7 @@ twine upload dist/*
 ## Project Structure
 
 ```
-MCPLuma/
+LumaMCP/
 ├── core/                   # Core modules
 │   ├── __init__.py
 │   ├── client.py          # HTTP client for Luma API

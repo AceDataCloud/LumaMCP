@@ -1,4 +1,4 @@
-# Copilot Instructions for MCPLuma
+# Copilot Instructions for LumaMCP
 
 ## Sync from Docs
 
