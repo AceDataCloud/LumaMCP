@@ -108,7 +108,7 @@ jobs:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
         run: |
-          pip install "twine>=5.0.0,<6.0.0"
+          pip install "twine>=6.0.0"
           twine upload dist/*
 
   create-release:
@@ -139,7 +139,7 @@ jobs:
   publish-mcp-registry:
     name: Publish to MCP Registry
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-    needs: [build, publish-pypi]
+    needs: [build]
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -175,7 +175,7 @@ jobs:
   publish-vscode:
     name: Publish VS Code Extension
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-    needs: [build, publish-pypi]
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -248,7 +248,7 @@ jobs:
   publish-smithery:
     name: Publish to Smithery
     if: github.event_name == 'push'
-    needs: [build, publish-pypi]
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -300,7 +300,7 @@ jobs:
   publish-jetbrains:
     name: Publish JetBrains Plugin
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
-    needs: [build, publish-pypi]
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
